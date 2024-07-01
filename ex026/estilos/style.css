@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    background-color: lightgray;
+    background-color: rgb(178, 178, 178);
 }
 
 header h1{
@@ -42,10 +42,11 @@ menu ul{
 }
 
 li{
-    background-color: rgb(151, 151, 151);
+    background-color: rgb(114, 114, 114);
     text-align: center;
     padding: 10px;
-    border: 2px solid lightgrey;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 5px;
 }
 
 li:hover{
