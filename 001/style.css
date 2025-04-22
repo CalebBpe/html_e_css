@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body{
+    width: 100VW;
+    height: 100vh;
+    cursor: url("verificar.png"), auto;
+}

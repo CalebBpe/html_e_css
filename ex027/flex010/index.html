@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow e fle-shrink</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        div.container{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: aqua;
+            align-items: flex-start;
+        }
+        div.box{
+            flex-basis: 250px;
+            background-color: tomato;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+        #b1{
+            flex-shrink:1;
+            flex-grow:0;
+        }
+        #b2{
+            flex-shrink:0;
+            flex-grow:1;
+        }
+        #b3{
+            flex-shrink:2;
+            flex-grow:0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box" id="b1">a</div>
+            <div class="box" id="b2">b</div>
+            <div class="box" id="b3">c</div> 
+        </div>
+    </main>
+</body>
+</html>

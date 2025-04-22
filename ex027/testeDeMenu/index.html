@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="screen.css" media="screen">
+    <title>Document</title>
+</head>
+<body onresize="mudar()">
+    <header>
+        <nav>
+            <a href="">Idioma</a>
+            <a href="">Teste</a>
+            <a href="">Data</a>
+            <a href="">Ajuda</a>
+                   
+        </nav>
+            <span><img class="itens" src="icons8-hamburger-menu-50.png" alt=""></span>
+    </header>
+    <script>
+        function mudar(){
+            if(Window.innerWidth <= 500){
+                nav.style.display = "inline-block"
+            } else{
+                nav.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

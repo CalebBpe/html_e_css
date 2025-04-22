@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div.container{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: brown;
+            height: 400px;
+            align-items: start;
+        }
+        div.box{
+            background-color: aqua;
+            padding: 20px;
+            border:1px solid black;
+        }
+        div#B1{ 
+            align-self: flex-end;
+        }
+        div#B2{
+            align-self: stretch;
+        }
+        div#B3{
+            align-self: center;
+        }
+        div#B4{
+
+        }
+        div#B5{
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box" id="B1">a</div>
+            <div class="box" id="B2">b</div>
+            <div class="box" id="B3">c</div>
+            <div class="box" id="B4">d</div>
+            <div class="box" id="B5">e</div>
+            <div class="box" id="B6">f</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teste de cores</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div></div>
+            <p>Digite cores (in English)</p>
+            <input type="text"> <br>
+        </section>
+    </main>
+
+    <script>
+        let box = document.querySelector("div"),
+            input = document.querySelector("input");
+                                    //    arrow functio
+         input.addEventListener("input", () => {
+            box.style.borderRadius = input.value;
+            box.style.background = input.value;
+            box.style.rotate = input.value;
+            box.style.width = input.value;
+        });
+    </script>
+</body>
+</html>
